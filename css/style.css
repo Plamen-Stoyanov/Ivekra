@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto',
+        sans-serif;
+}
+
+*::after,
+*::before {
+    box-sizing: inherit;
+}
+
+main {
+    height: 1000px;
+}
+
+/* Navbar */
+.header .wrapper {
+    position: relative;
+}
+
+.header .navbar {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+    z-index: 10;
+    width: 100%;
+}
+
+.header .navbar li a {
+    color: white;
+    font-size: 13px;
+}
+
+.header .navbar li a:hover {
+    font-weight: bold;
+}
+
+.header .navbar img {
+    height: 35px;
+    width: 150px;
+    margin-left: 6rem;
+    margin-right: 3rem;
+}
+
+.header .navbar .ml-auto {
+    margin-right: 8rem;
+}
+
+.header .navbar .ml-auto a {
+    padding: 8px;
+}
+
+
+/* Carousel */
+.carousel {
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.carousel-item {
+    height: 400px;
+}
+
+.carousel-item:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.carousel-inner h1 {
+    font-size: 30px;
+    line-height: 45px;
+    padding-bottom: 2rem;
+}
+
+.carousel-inner button {
+    font-size: 14px;
+    padding: 10px;
+
+}
+
+.carousel-inner .carousel-caption {
+    bottom: 100px;
+    left: 110px;
+    text-align: left;
+}
+
+.carousel-indicators li {
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+}
+
+/* Main */
+.main {
+    margin-top: 25rem;
+}
+
+.main .col-sm {
+    border-left: 2px solid #0086EF;
+}
+
+.main .col-sm:first-child {
+    border: none;
+    background: #DBDBDB;
+}
+
+.inner-item {
+    height: 170px;
+}
+
+.col-sm .inner-item img {
+    float: left;
+}
+
+.col-sm .inner-item span {
+    float: left;
+    margin-left: 1rem;
+    font-size: 13px;
+}
+
+.col-sm .inner-item p {
+    padding-left: 10rem;
+    font-size: 15px;
+    margin-bottom: 5px;
+}
+
+/* Footer */
+.footer {
+    margin-top: 4rem;
+    height: 250px;
+    background: #181818;
+}
+
+.footer .col-sm {
+    margin-top: 2rem;
+    color: white;
+}
+
+.footer .col-sm ul li a {
+    color: white;
+    list-style: none;
+    text-decoration: none;
+    list-style-type: none;
+    margin-bottom: 1rem;
+}
+
+#map {
+    width: 100%;
+    height: 200px;
+    background-color: grey;
+}
