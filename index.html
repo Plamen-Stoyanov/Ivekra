@@ -1,48 +1,50 @@
-<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <script
-      src="https://kit.fontawesome.com/41daf11c4f.js"
-      crossorigin="anonymous"
-    ></script>
-    <link
-      href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
-      rel="stylesheet"
-    />
-    <link href="css/bootstrap.min.css" rel="stylesheet" />
-    <link rel="stylesheet" href="css/style.css" />
-    <title>Ivektra</title>
-  </head>
 
-  <body>
-    <main>
-      <!-- Header -->
-      <header class="header">
-        <!-- Navbar -->
-        <div class="wrapper">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+  <script src="https://kit.fontawesome.com/41daf11c4f.js" crossorigin="anonymous"></script>
+
+  <link href="css/bootstrap.min.css" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/style1.css" />
+  <title>Ivektra</title>
+</head>
+
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-6 col-sm-6 col-md-2 justify-content-center">
+          <a href="index.html">
+            <img src="img/ivekra-LOGO.png" alt="" class="img-responsive" />
+          </a>
+        </div>
+        <div class="col-xs-6 col-sm-6 col-md-10">
           <nav class="navbar">
-            <img src="img/ivekra-LOGO.png" alt="" />
             <ul class="nav nav-pills">
               <li class="nav-item">
-                <a class="nav-link " href="#">НАЧАЛО</a>
+                <a class="nav-link " href="index.html">НАЧАЛО</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">ПРОДУКТИ</a>
+                <a class="nav-link" href="products.html">ПРОЕКТИ</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">УСЛУГИ</a>
+                <a class="nav-link" href="our_services.html">УСЛУГИ</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link " href="#">ЗА НАС</a>
+                <a class="nav-link " href="for_us.html">ЗА НАС</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link " href="#">КОНТАКТИ</a>
+                <a class="nav-link " href="contact.html">КОНТАКТИ</a>
               </li>
             </ul>
-            <ul class="nav justify-content-end ml-auto">
+            <ul class="nav justify-content-end">
               <li class="nav-item">
                 <a class="nav-link" href="#">BG</a>
               </li>
@@ -54,62 +56,58 @@
               </li>
             </ul>
           </nav>
+        </div>
+      </div>
+    </div>
+  </header>
 
-          <!-- Carousel -->
-          <div
-            id="carouselExampleIndicators"
-            class="carousel slide"
-            data-ride="carousel"
-          >
-            <ol class="carousel-indicators">
-              <li
-                data-target="#carouselExampleIndicators"
-                data-slide-to="0"
-                class="active"
-              ></li>
-              <li
-                data-target="#carouselExampleIndicators"
-                data-slide-to="1"
-              ></li>
-              <li
-                data-target="#carouselExampleIndicators"
-                data-slide-to="2"
-              ></li>
-            </ol>
-            <div class="carousel-inner">
-              <div class="carousel-caption">
-                <h1 class="display-4">
-                  АВТОМАТИЗИРАНИ СИСТЕМИ, <br />
-                  НА КОИТО МОЖЕТЕ ДА РАЗЧИТАТЕ!
-                </h1>
-                <button type="button" class="btn btn-primary">
-                  ПОТЪРСЕТЕ НИ
-                </button>
-              </div>
-              <div class="carousel-item active">
-                <!-- <h1 class="display-1"></h2>
-                                                     -->
-                <img class="d-block w-100" src="img/image-1.jpeg" alt="" />
-              </div>
-              <div class="carousel-item">
-                <img class="d-block w-100" src="img/image-2.jpg" alt="" />
-              </div>
-              <div class="carousel-item">
-                <img class="d-block w-100" src="img/image-4.jpeg" alt="" />
+  <!-- Main -->
+  <main>
+    <section class="welcome">
+      <!-- Carousel -->
+      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class=""></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active carousel-item-left">
+            <img class="d-block w-100" src="img/image-1.jpeg" alt="" />
+          </div>
+          <div class="carousel-item carousel-item-next carousel-item-left">
+            <img class="d-block w-100" src="img/image-2.jpg" alt="" />
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="img/image-4.jpeg" alt="" />
+          </div>
+          <div class="wapper-carousel-info">
+            <div class="container">
+              <div class="row">
+                <div class="col-xs-12 col-sm-12">
+                  <h1 class="display-4">
+                    АВТОМАТИЗИРАНИ СИСТЕМИ, <br />
+                    НА КОИТО МОЖЕТЕ ДА РАЗЧИТАТЕ!
+                  </h1>
+                  <a href="contact.html">
+                    <button type="button" class="btn btn-primary">
+                      ПОТЪРСЕТЕ НИ
+                    </button>
+                  </a>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </header>
-
-      <!-- Main -->
-      <section class="main">
-        <div class="container">
-          <div class="row">
-            <div class="col-sm">
-              <h2>
-                ЗА НАС
-              </h2>
+      </div>
+    </section>
+    <!-- Welcome -->
+    <section class="main">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-md-4">
+            <div class="wapper-about-us bg-grey">
+              <h2>ЗА НАС</h2>
               <p>
                 ИВЕКРА” ЕООД е специализирана фирма за проектиране, изработка,
                 монтаж и поддръжка на пълначни, разфасоващи, пакетиращи,
@@ -118,90 +116,129 @@
               </p>
               <p>
                 Разполагаме и с богат опит в проектирането и изработката на
-                нестандартни машни и съоръжения с електро, електропневматично и
-                напълно пневматично управление и задвижване.
+                нестандартни машни и съоръжения с електро, електропневматично
+                и напълно пневматично управление и задвижване.
               </p>
               <p>
                 При нашият процес на работа се поддържа непрекъснат контакт
                 между конструкторите, технолозите и монтажниците.
               </p>
             </div>
-            <div class="col-sm">
-              <h2>ПРОДУКТИ</h2>
-              <div class="inner-item">
-                <img src="img/products/item-1.jpg" alt="" />
+          </div>
+          <div class="col-sm-6 col-md-4">
+            <h2>ПРОДУКТИ</h2>
+            <div class="inner-item">
+              <div class="pull-left">
+                <div class="img-box">
+                  <img src="img/products/item-1.jpg" alt="" />
+                </div>
+              </div>
+              <div class="item-inner-info">
                 <p>
-                  Линейна четирипозиционна пълначна машина за течни продукти на
-                  флоуметричен принцип (пълнене по ниво)
+                  Линейна четирипозиционна пълначна машина за течни продукти
+                  на флоуметричен принцип (пълнене по ниво)
                 </p>
                 <span><a href="">Вижте още</a></span>
               </div>
-              <div class="inner-item">
-                <img src="img/products/item-2.jpg" alt="">
-                <p>
-                  Автоматична линейна двупозиционна обемнодозираща пълначна
-                  линия
-                </p>
-                <span><a href="">Вижте още</a></span>
-              </div>
-              <div class=" inner-item">
-                <img src="img/products/item-3.jpg" alt="" />
-                <p>
-                  Автоматична опаковъчна линия за автоматизиране на
-                  производствения процес от участък разфасовка до участък
-                  палетизация.
-                </p>
-                <span><a href="">Вижте още</a></span>
-              </div>
-              <!-- <div class="inner-item">
-                            <img src="img/products/item-4.jpg" alt="">
-                            <p>
-                                Полуавтоматична обемно дозираща пълначна машина 100 ÷ 1100 мл. Изпълнение чисто
-                                пневматично.
-                            </p>
-                            <span><a href="">Вижте още</a></span>
-                        </div> -->
             </div>
-            <div class=" col-sm">
-              <h2>УСЛУГИ</h2>
-              <div class=" inner-item">
-                <img src="img/products/item-3.jpg" alt="" />
+            <div class="inner-item">
+              <div class="pull-left">
+                <div class="img-box">
+                  <img src="img/products/item-1.jpg" alt="" />
+                </div>
+              </div>
+              <div class="item-inner-info">
                 <p>
-                  Автоматична опаковъчна линия за автоматизиране на
-                  производствения процес от участък разфасовка до участък
-                  палетизация.
+                  Линейна четирипозиционна пълначна машина за течни продукти
+                  на флоуметричен принцип (пълнене по ниво)
                 </p>
                 <span><a href="">Вижте още</a></span>
               </div>
-              <div class=" inner-item">
-                <img src="img/products/item-3.jpg" alt="" />
+            </div>
+            <div class="inner-item">
+              <div class="pull-left">
+                <div class="img-box">
+                  <img src="img/products/item-1.jpg" alt="" />
+                </div>
+              </div>
+              <div class="item-inner-info">
                 <p>
-                  Автоматична опаковъчна линия за автоматизиране на
-                  производствения процес от участък разфасовка до участък
-                  палетизация.
+                  Линейна четирипозиционна пълначна машина за течни продукти
+                  на флоуметричен принцип (пълнене по ниво)
                 </p>
                 <span><a href="">Вижте още</a></span>
               </div>
-              <div class=" inner-item">
-                <img src="img/products/item-3.jpg" alt="" />
+            </div>
+            <div class="inner-item">
+              <div class="pull-left">
+                <div class="img-box">
+                  <img src="img/products/item-1.jpg" alt="" />
+                </div>
+              </div>
+              <div class="item-inner-info">
                 <p>
-                  Автоматична опаковъчна линия за автоматизиране на
-                  производствения процес от участък разфасовка до участък
-                  палетизация.
+                  Линейна четирипозиционна пълначна машина за течни продукти
+                  на флоуметричен принцип (пълнене по ниво)
+                </p>
+                <span><a href="">Вижте още</a></span>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-4">
+            <h2>УСЛУГИ</h2>
+            <div class="inner-item">
+              <div class="pull-left">
+                <div class="img-box">
+                  <img src="img/products/item-1.jpg" alt="" />
+                </div>
+              </div>
+              <div class="item-inner-info">
+                <p>
+                  Линейна четирипозиционна пълначна машина за течни продукти
+                  на флоуметричен принцип (пълнене по ниво)
+                </p>
+                <span><a href="">Вижте още</a></span>
+              </div>
+            </div>
+            <div class="inner-item">
+              <div class="pull-left">
+                <div class="img-box">
+                  <img src="img/products/item-1.jpg" alt="" />
+                </div>
+              </div>
+              <div class="item-inner-info">
+                <p>
+                  Линейна четирипозиционна пълначна машина за течни продукти
+                  на флоуметричен принцип (пълнене по ниво)
+                </p>
+                <span><a href="">Вижте още</a></span>
+              </div>
+            </div>
+            <div class="inner-item">
+              <div class="pull-left">
+                <div class="img-box">
+                  <img src="img/products/item-1.jpg" alt="" />
+                </div>
+              </div>
+              <div class="item-inner-info">
+                <p>
+                  Линейна четирипозиционна пълначна машина за течни продукти
+                  на флоуметричен принцип (пълнене по ниво)
                 </p>
                 <span><a href="">Вижте още</a></span>
               </div>
             </div>
           </div>
         </div>
-      </section>
-    </main>
-
-    <!-- Footer -->
-    <footer class="footer">
+      </div>
+    </section>
+  </main>
+  <!-- Footer -->
+  <footer class="footer">
+    <section id="footer">
       <div class="container">
         <div class="row">
-          <div class="col-sm">
+          <div class="col-sm-12 col-md-4">
             <h4>Полезни връзки</h4>
             <ul class="list-unstyled">
               <li>
@@ -215,83 +252,80 @@
               </li>
             </ul>
           </div>
-          <div class="col-sm">
+          <div class="col-sm-12 col-md-4">
             <h4>Контакти</h4>
             <ul class="list-unstyled">
               <li>
-                <a href=""
-                  >Производствена база, гр.Русе 7000 <br />
-                  бул. 3ти март №15</a
-                >
+                <a href="">Производствена база, гр.Русе 7000 <br />
+                  бул. 3ти март №15</a>
               </li>
               <li>
                 <a href="">
-                  <i class="far fa-envelope"></i> hotel.kristo@gmail.com</a
-                >
+                  <i class="far fa-envelope" aria-hidden="true"></i>
+                  hotel.kristo@gmail.com</a>
               </li>
               <li>
                 <a href="">
-                  <i class="fas fa-phone-alt"></i> +359 73 880 444 / +359 895
-                  680 444</a
-                >
+                  <i class="fas fa-phone-alt" aria-hidden="true"></i> +359 73
+                  880 444 / +359 895 680 444</a>
               </li>
             </ul>
           </div>
-          <div class="col-sm" id="map">
-            One of three columns
+          <div class="col-sm-12 col-md-4" id="map"></div>
+        </div>
+      </div>
+    </section>
+    <section class="last">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <p>(C) 2020 ИВЕКРA. All rights reserved.</p>
           </div>
         </div>
       </div>
-    </footer>
+    </section>
+  </footer>
 
-    <script>
-      $(document).ready(function() {
-        $(".carousel").carousel();
+  <script>
+    $(document).ready(function () {
+      $(".carousel").carousel();
+    });
+  </script>
+
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+  </script>
+
+  <!-- Google Maps -->
+  <script>
+    // Initialize and add the map
+    function initMap() {
+      // The location
+      var ruse = {
+        lat: 43.85017,
+        lng: 25.95156
+      };
+      // The map, centered at location
+      var map = new google.maps.Map(document.getElementById("map"), {
+        zoom: 4,
+        center: ruse
       });
-    </script>
+      // The marker, positioned at location
+      var marker = new google.maps.Marker({
+        position: ruse,
+        map: map
+      });
+    }
+  </script>
+  <script async="" defer=""
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBEWKs5RMjwLsLK97cYQ7-52DvfWUO0KMg&amp;callback=initMap"
+    type="text/javascript"></script>
+</body>
 
-    <script
-      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-      crossorigin="anonymous"
-    ></script>
-
-    <!-- Google Maps -->
-    <script>
-      // Initialize and add the map
-      function initMap() {
-        // The location
-        var ruse = {
-          lat: 43.85017,
-          lng: 25.95156
-        };
-        // The map, centered at location
-        var map = new google.maps.Map(document.getElementById("map"), {
-          zoom: 4,
-          center: ruse
-        });
-        // The marker, positioned at location
-        var marker = new google.maps.Marker({
-          position: ruse,
-          map: map
-        });
-      }
-    </script>
-    <script
-      async
-      defer
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBEWKs5RMjwLsLK97cYQ7-52DvfWUO0KMg&callback=initMap"
-      type="text/javascript"
-    ></script>
-  </body>
 </html>
